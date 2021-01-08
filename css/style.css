@@ -1,0 +1,689 @@
+
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+	scroll-behavior: smooth;
+}
+.container{
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+* a,ul{
+  text-decoration: none;
+	list-style: none;
+}
+body{
+	background: #D9D4BF;
+	background-image: url('../img/bg-main2.png');
+	background-position: center;
+	background-size: contain;
+}
+/* Scroll
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+		background-color: #D9D4BF;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+		background-color: #A69068;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+/* Logo
+========================================================= */
+.navbar-logo{
+	padding: 5px 0 0 0;
+	text-align: center;
+	float: left;
+	width: 150px;
+	position: absolute;
+}
+.navbar-logo img{
+	width: 150px;
+}
+.logo__txt{
+	text-align: center;
+	width: 150px;
+	position: absolute;
+	left: 200px;
+	font-size: 19px;
+	top: 23px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #475a68;
+}
+/* Menu
+========================================================= */
+.headerSec{
+	height: 70px;
+	width: 100%;
+	background-color: #80A7BF;
+}
+/*
+.fix__menu{
+	position: fixed;
+	z-index: 99999;
+}*/
+.top-menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 9999;
+}
+.top-menu li{
+	position: relative;
+}
+.menu-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+}
+.menu-main.active{
+	display: block;
+}
+.linkMenu{
+  text-decoration: none;
+  line-height: 70px;
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #475a68;
+	font-family: 'Raleway', sans-serif;
+
+  transition: .3s linear;
+	background-image: linear-gradient(#fff, #000);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+	padding-bottom: 5px;
+}
+.linkMenu:hover{
+	background-size: 100% 2px;
+}
+/* Toggle menu && btn
+========================================================= */
+.ham {
+	display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	align-items: center;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #475a68;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+/* mainPage
+========================================================= */
+.mainPage{
+
+}
+.sliderBlock{
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	height: 500px;
+	/* box-shadow:
+	 10px 0 20px rgba(50, 50, 50, 0.75),
+	 -30px 4px 20px -20px rgba(50, 50, 50, 0.75),
+	 20px 0 10px -20px rgba(50, 50, 50, 0.75),
+	 10px 0 20px rgba(50, 50, 50, 0.75) inset; */
+}
+.owl-carousel img{
+	height: 500px;
+}
+.owl-prev{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 500px;
+	font-size: 80px !important;
+	outline: none;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(128, 167, 191, 0.8) !important;
+	color: #A69068 !important;
+}
+.owl-next{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 500px;
+	font-size: 80px !important;
+	font-family: 'Raleway', sans-serif;
+	outline: none;
+	background-color: rgba(128, 167, 191, 0.6) !important;
+	color: #A69068 !important;
+}
+/* Cadebo
+========================================================= */
+.cadebo{
+	/* -webkit-box-shadow: 0px 30px 20px 10px rgba(10, 10, 10, 0.5);
+	-moz-box-shadow:    0px 30px 20px 10px rgba(10, 10, 10, 0.5);
+	box-shadow:         0px 30px 20px 10px rgba(10, 10, 10, 0.5); */
+	background: #fff;
+}
+.titleCadebo{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	position: relative;
+	margin: 0 0 20px 0;
+	padding: 20px 0 0 0;
+}
+.titleCadebo:before{
+	content: '';
+	border-top: 2px solid #A69068;
+	border-radius: 40%;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	left: 0;
+	width: 40%;
+	margin: 0 auto;
+}
+.txt{
+	text-align: justify;
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	padding: 20px 50px;
+	font-size: 20px;
+}
+/* Gallery Main
+========================================================= */
+.gallery{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 5px;
+	padding: 50px 50px;
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	background: #fff;
+}
+.gallery img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+/* Tutorial Dog Card
+========================================================= */
+.tutorialDog{
+	background: #fff;
+	display: flex;
+	justify-content: center;
+}
+.tutorialDog__card{
+	display: flex;
+	justify-content: center;
+	margin: 20px 30px;
+}
+.card__link{
+	text-decoration: none;
+}
+.card__img{
+	background-image: url("../img/zlo.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	transition: .5s linear;
+}
+.card__img:hover{
+	border: 10px solid #475a68;
+	overflow: hidden;
+}
+.title__card{
+	color: #475a68;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 18px;
+	letter-spacing: .7px;
+}
+/* FeedBack
+========================================================= */
+#feedBack{
+}
+.feedBack__block{
+	display: grid;
+	justify-content: center;
+	background: #fff;
+}
+.feedBack__title{
+	padding: 20px 0;
+	color: #475a68;
+	position: relative;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+.feedBack__title:before{
+	content: '';
+	border-top: 2px solid #A69068;
+	border-radius: 40%;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	left: 0;
+	width: 40%;
+	margin: 0 auto;
+}
+#form_message{
+	margin: 10px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+
+}
+.titles{
+	padding: 15px 0 10px 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.input{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	width: 500px;
+	outline: none;
+	padding: 10px;
+}
+.txtar{
+	width: 500px;
+	height: 200px;
+	resize: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	outline: none;s
+}
+.btn-par{
+	text-align: center;
+}
+#submit{
+	background: none;
+	padding: 10px 60px;
+	margin: 20px 0;
+	outline: none;
+	border: 1px solid #000;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	transition: .5s;
+}
+#submit:hover{
+	color: #fff;
+	background-color: #2E4159;
+	border: 1px solid #2E4159;
+	border-radius: 10px;
+}
+/* Scroll Top
+========================================================= */
+#back-top{
+  width: 130px;
+  height: 89%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  font: bold 15px Verdana, sans-serif;
+  text-decoration: none;
+  color: #45688E;
+	background: rgba(225,231,237, 0.4);
+  padding-top: 10px;
+}
+#back-top:hover {
+  background: rgba(225,231,237, 0.8);
+}
+/* About Breed Images(О породе фотки и текст)
+========================================================= */
+.blockWikiCadebo{
+
+}
+.filterBreed{
+	width: 100%;
+	height: 250px;
+	background-color: #80A7BF;
+}
+.filterTitle{
+	color: #475a68;
+	text-align: center;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+.filterBreedInner{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	width: 100%;
+	margin: 50px auto;
+}
+.filterBreedBlocks{
+}
+.filterBreedBlocks p{
+	margin-bottom: 20px;
+	text-align: inherit;
+	color: #fff;
+}
+.filterBreedBlocks p a{
+	font-size: 18px;
+	color: #475a68;
+}
+.filterBreedBlocks p:last-child{
+	margin-bottom: 0;
+}
+.presentImg{
+	max-width: 100%;
+	height: 300px;
+}
+.presentImg img{
+	object-fit: cover;
+	object-position: center;
+}
+.allBox{
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+}
+.firstBox{
+}
+.wikiTitle{
+	padding: 20px 50px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+}
+.wikiTitle::before{
+	content: '';
+	border-top: 2px solid #A69068;
+	border-radius: 40%;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	left: 0;
+	width: 20%;
+	margin: 10px auto 0 auto;
+}
+.subTxt{
+	text-align: justify;
+	letter-spacing: 1px;
+	padding: 10px 50px 20px 50px;
+	font-size: 20px;
+}
+.subTxt__inner{
+	text-align: justify;
+	letter-spacing: 1px;
+	padding: 10px 50px 20px 0;
+	font-size: 20px;
+}
+.subTitle{
+	text-align: justify;
+	letter-spacing: 1px;
+	padding: 10px 50px 20px 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+.wikiList li h4{
+	font-size: 23px;
+}
+.wikiList .wikiList__inner{
+	list-style: initial;
+}
+.wikiList__inner li{
+	font-style: italic;
+	margin-left: 50px;
+}
+/* Contacts
+========================================================= */
+
+.mainContacts__inner{
+	background-color: #fff;
+	display: flex;
+
+}
+.blockImg{
+	max-width: 50%;
+}
+.contactImg{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.contactTitle{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	background: #80A7BF;
+	padding: 20px;
+}
+.contactsList{
+	width: 50%;
+	height: 500px;
+}
+.contactsList__inner{
+	padding: 0 20px;
+	margin: 30px 0 0 0;
+}
+.contactsList__inner li{
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.contactsList__inner li:first-child{
+	padding: 0;
+}
+.fa-phone-alt, .fa-envelope, .fa-map-marker-alt{
+	padding-right: 10px;
+}
+.map{
+	max-width: 100%;
+	margin-top: 20px;
+}
+.googleMap{
+	width: 535px;
+	height: 201px;
+}
+/* Our Dogs
+========================================================= */
+.mainDogsCard__inner{
+	background-color: #fff;
+}
+.filterList{
+	display: flex;
+	justify-content: center;
+}
+.buttons{
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 20px 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: .5s linear;
+}
+.filterList li:first-child{
+	margin-left: 0;
+}
+.active__filter{
+	background-color: #80A7BF;
+	color: #fff;
+}
+.content{}
+.cardSuki, .cardPuppies{
+	display: none;
+}
+.content{
+	padding: 50px 0;
+}
+.cardCabel__inner, .cardSuki__inner, .cardPuppies__inner{
+	display: grid;
+	grid-template-columns: 350px 620px;
+	margin: 0 50px;
+	border: 10px inset #A69068;
+}
+.imgCab, .imgSuk, .imgPup{
+	width: 350px;
+	height: 400px;
+}
+.imgCab__inner, .imgSuk__inner, .imgPup__inner{
+	width: 100%;
+	height: 400px;
+}
+.infoCab, .infoSuk{
+	max-width: 100%;
+	height: 400px;
+	/* background-color: #A69068 #7AA65B*/;
+}
+.titleCardDog{
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	padding: 20px 0;
+	letter-spacing: 1px;
+	text-align: center;
+	background-color: #fff;
+	margin: 0 20px;
+}
+.tituls{
+	margin-left: 50px;
+	margin-right: 20px;
+	background-color: #fff;
+}
+.tituls__inner{
+	padding: 20px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+	color: #475a68;
+	font-size: 18px;
+}
+/* Gallery Page
+========================================================= */
+.gallery-bg{
+		background-color: #fff;
+}
+.gallery__inner{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	grid-gap: 5px;
+}
+.gallery__inner img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	transition: all .5s;
+	cursor: pointer;
+}
+.horizontal {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.vertical {
+	grid-row: span 2;
+}
+
+.big {
+	grid-column: span 3;
+	grid-row: span 2;
+}
+.threeImg{
+	object-position: right !important;
+}
+/* About Us Page
+========================================================= */
+.aboutUs-bg{
+	background-color: #fff;
+}
+.aboutUsImg{
+	width: 100%;
+	height: 400px;
+}
+.aboutUsImg img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+.fcirkfLogo{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 50px 0;
+}
+.fciLogo, .rkfLogo{
+	text-align: center;
+}
+.fciLogo img, .rkfLogo img{
+	width: 200px;
+
+}
+/* Footer
+========================================================= */
+footer{
+	background-color: #2E4159;
+}
+.footer__inner{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	align-items: center;
+}
+.copy{
+	color: #fff;
+	margin-right: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	line-height: 20px;
+}

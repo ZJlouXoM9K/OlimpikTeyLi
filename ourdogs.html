@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav-ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-ico/favicon-16x16.png">
+    <link rel="manifest" href="img/fav-ico/site.webmanifest">
+    <link rel="mask-icon" href="img/fav-ico/safari-pinned-tab.svg" color="#3e9fbb">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/socst.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/media-screen.css">
+    <title>Olympiс Tey Li</title>
+  </head>
+  <body>
+    <a id="back-top" href="#" onclick="return up()">&#9650; Наверх</a>
+    <header>
+      <div class="headerSec fix__menu">
+        <div class="container ">
+          <nav class="top-menu">
+            <a class="navbar-logo"><img id="logo" src="img/logo/yellowLogo.svg"></a>
+            <a href="" class="logo__txt">Olympic Tey Li</a>
+            <ul class="menu-main">
+              <li>
+                <a class="linkMenu" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="linkMenu" href="ourdogs.html">Наши собаки</a>
+              </li>
+              <li>
+                <a class="linkMenu" href="gallery.html">Галерея</a>
+              </li>
+              <li>
+                <a class="linkMenu" href="aboutus.html">О нас</a>
+              </li>
+              <li>
+                <a class="linkMenu" href="aboutBreed.html">О породе</a>
+              </li>
+              <li>
+                <a class="linkMenu" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="50"  onclick="this.classList.toggle('active')">
+              <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"  />
+              <path class="line middle" d="m 70,50 h -40" />
+              <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="mainDogsCard">
+      <div class="container">
+        <div class="mainDogsCard__inner">
+          <div class="dogsFilter">
+            <ul class="filterList">
+              <li class="buttons active__filter" onclick="myFunction(0,'cabela')">Кобеля</li>
+              <li class="buttons" onclick="myFunction(1,'suki')">Суки</li>
+              <li class="buttons" onclick="myFunction(2,'puppies')">Щенки</li>
+            </ul>
+            <!-- Кабеля                                -->
+            <div class="content cardCabel" id="cabela">
+              <div class="cardCabel__inner">
+                <div class="imgCab">
+                  <img src="img/dog5.jpeg" class="imgCab__inner" alt="">
+                </div>
+                <div class="infoCab">
+                  <h1 class="titleCardDog">Азазель</h1>
+                  <ul class="tituls">
+                    <li class="tituls__inner">Юный чемпион России</li>
+                    <li class="tituls__inner">Чемпион России</li>
+                    <li class="tituls__inner">Чемпион РКФx3</li>
+                    <li class="tituls__inner">Сдан тест на психику Т1</li>
+                    <li class="tituls__inner">Дрессировка - ОКД - 2</li>
+                    <li class="tituls__inner">Тест на Дисплазию - HD-A, ED-0</li>
+                    <li class="tituls__inner">Проведено полное обследование сердца.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Суки                                  -->
+            <div class="content cardSuki" id="suki">
+              <div class="cardSuki__inner">
+                <div class="imgSuk">
+                  <img src="img/dog5.jpeg" class="imgSuk__inner" alt="">
+                </div>
+                <div class="infoSuk">
+                  <h1 class="titleCardDog">Тейра</h1>
+                  <ul class="tituls">
+                    <li class="tituls__inner">Юный чемпион России</li>
+                    <li class="tituls__inner">Чемпион России</li>
+                    <li class="tituls__inner">Чемпион РКФx3</li>
+                    <li class="tituls__inner">Сдан тест на психику Т1</li>
+                    <li class="tituls__inner">Дрессировка - ОКД - 2</li>
+                    <li class="tituls__inner">Тест на Дисплазию - HD-A, ED-0</li>
+                    <li class="tituls__inner">Проведено полное обследование сердца.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Щенки                                 -->
+            <div class="content cardPuppies" id="puppies">
+              <div class="cardPuppies__inner">
+                <div class="imgPup">
+                  <img src="img/dog5.jpeg" class="imgPup__inner" alt="">
+                </div>
+                <div class="infoCab">
+                  <h1 class="titleCardDog">Щенок Азазель</h1>
+                  <ul class="tituls">
+                    <li class="tituls__inner">Юный чемпион России</li>
+                    <li class="tituls__inner">Чемпион России</li>
+                    <li class="tituls__inner">Чемпион РКФx3</li>
+                    <li class="tituls__inner">Сдан тест на психику Т1</li>
+                    <li class="tituls__inner">Дрессировка - ОКД - 2</li>
+                    <li class="tituls__inner">Тест на Дисплазию - HD-A, ED-0</li>
+                    <li class="tituls__inner">Проведено полное обследование сердца.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container footer__inner">
+          <p class="copy">&#169; сайт питомника собак породы Cadebou  «Olympiс Tey Li»  Все права защищены. Копирование и воспроизведение любых материалов сайта запрещено.</p>
+          <ul class="socialIcons">
+            <li><a href="#" class="facebook"><i class="fa fa-facebook "></i></a></li>
+            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
